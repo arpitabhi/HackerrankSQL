@@ -5,4 +5,6 @@
 
 select distinct city from station where city regexp "^([^aieouAIEOU]).*([^aieouAIEOU])$" or city regexp "^([^aieouAIEOU])" or city regexp "([^aieouAIEOU])$";
 
+select distinct city from station where city not rlike "^([aieouAIEOU]).*([aieouAIEOU])$";
+
 
