@@ -1,0 +1,10 @@
+/*
+Author : Arpit Shukla
+Date : 4th June, 2020
+
+Hackerrank Weather Observation Station 18 Solution MySql
+*/
+
+select round(abs(max(long_w)-min(long_w)) + abs(max(lat_n)-min(lat_n)),4) from station;
+
+
